@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*  Customize Player Text  */
+#title {
+    margin: 50px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/*  Main Container for the Game Canvas and the Menu */
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* height: 850px; */
+}
+
+    /*  Game Canvas  */
+    canvas {
+        border: 1px solid black;
+        height: 640px;
+    }
+
+
+    /*  Game Menu  */
+    #menu {
+        min-width: 360px;
+        height: 640px;
+        border: 1px solid black;
+    }
+
+    @media (max-width: 720px) {
+        #menu {
+            height: 300px;
+        }
+    }
