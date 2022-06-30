@@ -15,7 +15,7 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* height: 850px; */
+    margin-bottom: 200px;
 }
 
     /*  Game Canvas  */

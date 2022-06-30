@@ -9,8 +9,8 @@ var downKey;
 var leftKey;
 
 //Create game variables
-var screenWidth = 1280;
-var screenHeight = 720;
+var screenWidth = 360;
+var screenHeight = 640;
 var gameLoop;
 var borders = [];
 
@@ -34,7 +34,7 @@ function step() {
 
     //Draw everything
     drawScreen();
-
+    player.step()
 }
 
 function drawScreen() {
@@ -42,6 +42,8 @@ function drawScreen() {
     ctx.fillStyle = "#14213d";
     ctx.fillRect(0,0,screenWidth,screenHeight)
     drawAllbodyParts()
+    player.updateLocation()
+    
 }
 
 function setupInputs() {
